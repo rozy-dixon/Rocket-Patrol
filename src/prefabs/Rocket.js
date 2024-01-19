@@ -18,7 +18,7 @@ class Rocket extends Phaser.GameObjects.Sprite {
             }
         }
         // fire button
-        if(Phaser.Input.Keyboard.JustDown(keyFire)) {
+        if(Phaser.Input.Keyboard.JustDown(keyFIRE)) {
             this.isFiring = true
         }
         // if fired, move up
