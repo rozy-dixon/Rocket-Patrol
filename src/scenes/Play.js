@@ -5,7 +5,7 @@ class Play extends Phaser.Scene {
 
     create() {
         // tile sprites
-        this.starflied = this.add.tileSprite(0, 0, 640, 480, 'starflied').setOrigin(0, 0)
+        this.starfield = this.add.tileSprite(0, 0, 640, 480, 'starfield').setOrigin(0, 0)
         // borders and UI
         // x coord, y coord, width, height, color
         this.add.rectangle(0, borderUISize + borderPadding, game.config.width, borderUISize * 2, 0x00FF00).setOrigin(0, 0) // green UI background
@@ -23,7 +23,7 @@ class Play extends Phaser.Scene {
     }
 
     update() {
-        this.starflied.tilePositionX -= 4
+        this.starfield.tilePositionX -= 4
         //this.p1Rocket.update()
     }
 }
